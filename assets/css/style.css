@@ -1,0 +1,276 @@
+/*====================================
+ Free To Use For Personal And Commercial Usage
+Author: http://binarytheme.com
+ License: Open source - MIT
+ Please visit http://opensource.org/licenses/MIT for more Full Deatils of license.
+ Share Us if You Like our work 
+ Enjoy Our Codes For Free always.
+======================================*/
+
+
+/* CUSTOM STYLE SHEET */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+body {
+ /*   
+	background-color: #5D05a2; 
+	background-color: #6ca77c;
+    background-color: #5D05b9; 
+	background-color: #2E3436;
+	background-color: #045f84;
+	background-color: #333333;
+	background-color: #3f2860;
+	*/
+	background: #3f2860; /* For browsers that do not support gradients */
+	/*
+	background: -webkit-linear-gradient(#3f2860,#303075); 
+	background: -o-linear-gradient(#3f2860,#303075); 
+	background: -moz-linear-gradient(#3f2860,#303075); 
+	background: -ms-linear-gradient(#3f2860,#303076);
+	background: linear-gradient(#3f2860,#303076);*/ /* Standard syntax */ 
+
+}
+
+i{
+	font-weight:normal;
+}
+
+/* GLOBAL  STYLES  */
+
+/*h2{
+	color: #ef6d3b;
+}*/
+
+hr{
+	border-style:solid;
+	/*color: #90c5a9;*/
+	color:#19CF7F;
+	background-color: #19CF7F;
+	border-color: #19CF7F;
+}
+
+
+h4{
+	color: #90c5a9;
+	color:#19CF7F;
+	font-weight:bold;
+	color: #fa8b60;
+}
+
+h1, h2, h3, h5, h6 {
+}
+
+/*.main-color {
+    color: #19CF7F;
+}*/
+
+/* GENERAL RULES FOR LINKS */
+a{
+    text-decoration: none;
+	color: rgb(127, 20, 212);
+	color: #00CCCC;
+	color: #D9853B;
+	color: #90c5a9;
+	color: #fa8b60;
+	color:#19CF7F
+}
+a:visited{
+	text-decoration: none;
+	color: #00CCCC;
+	color: #D9853B;
+	color: #90c5a9;
+	color: #fa8b60;
+	color:#19CF7F
+}
+a:active{
+	text-decoration: none;
+	color: #00CCCC;
+	color: #D9853B;
+	color: #90c5a9;
+	color: #fa8b60;
+	color:#19CF7F
+}
+a:hover{
+	text-decoration: none;
+	color: #00CCCC;
+	color: #c16310;
+	color: #90c5a9;
+	color: #fa8b60;
+	color:#19CF7F
+}
+
+.center {
+    text-align: center;
+}
+
+.anchor{
+    padding-top:120px;
+}
+
+.fa{
+	color: #fa8b60;
+	color:#ffffff;
+}
+
+.fa:hover{
+	color: #fa8b60;
+	color:#19CF7F
+}
+
+h1
+{
+letter-spacing:5px; 
+font-size:50px;
+font-weight:900;
+
+ }
+
+.navbar-default{
+	background-color:rgb(0,0,0);
+	background-color: #90c5a9;
+	background-color: #333333;
+    background-color: rgba(33,33,33,0.6);
+	/*border:0px 0px 1px 1px solid;
+	border-color:black;*/
+	border:none;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #777777;
+	border:1px transparent;
+	/*-moz-border-radius: 0px;
+	-webkit-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;*/
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #6ca77c;
+	background-color: #045f84;
+    background-color: #5D05A2; 
+	background-color: #2E3436;
+	background-color: #3f2860;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ffffff;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #19CF7F;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+    color: #19CF7F;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: rgba(33,33,33,0.8);
+}
+
+
+
+.sub-head {
+    margin: 35px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.margin-botom-50 {
+    margin-bottom: 50px;
+}
+
+
+/* HOME SECTION STYLES */
+
+#home-section {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#counter-default {
+    margin-top: 80px;
+}
+
+.img-circle{
+	width:180px;
+    /*border-radius: 10px;*/
+}
+
+
+.bk-blue {
+    background-color: #6E21E2;
+}
+
+.bk-green {
+    background-color: #02FA33;
+}
+
+.bk-red {
+    background-color: #FF0700;
+}
+
+.bk-pink {
+    background-color: #FF00E0;
+}
+
+.medium {
+    height: 3px;
+}
+
+.content{
+    background-color: rgba(33,33,33,0.6);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+/* FOOTER SECTION STYLES */
+
+#footer {
+
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+    padding: 0px;
+    padding-right: 15px;
+	position: fixed;
+	width:100%;
+	left:0;
+	right:0;
+	bottom:0;
+	height:20px;
+	background-color: rgba(33,33,33,0.8)
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 767px) {
+    html, body {
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    html, body {
+        height: 96%;
+    }
+
+    .container {
+        padding-left: 10px;
+    }
+}
