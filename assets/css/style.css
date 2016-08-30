@@ -108,11 +108,10 @@ font-weight:900;
 	border:1px transparent;
 }
 
-
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #ffffff;
-	background-color: rgba(48,27,82,238);
-	background-image: url("../img/waves.png");
+	background-color: rgba(0,0,0,0.3);
+/*	background-image: url("../img/waves.png");*/
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
