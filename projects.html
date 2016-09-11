@@ -51,6 +51,7 @@
 <meta name="theme-color" content="#301b52">
 
  <!-- -->
+<script src="functions.js"></script>
 
 </head>
 
@@ -69,9 +70,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav header">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li class="active"><a href="projects.html">Projects</a></li>
+            <li id="home"><a href="index.html">Home</a></li>
+			<li id="about_li" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><a href="#about" onclick="javascript:goto_about();" >About</a></li>
+            <li id="research"><a href="research.html">Research</a></li>
+            <li id="projects" class="active"><a href="projects.html">Projects</a></li>
 <!--            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
