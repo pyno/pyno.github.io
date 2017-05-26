@@ -1,5 +1,5 @@
 function goto_about(){
-	window.location="index.html#about";
+	window.location="/index.html#about";
 
 	document.getElementById("about_li").className+=" active";
 	document.getElementById("home").className="";
