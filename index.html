@@ -15,241 +15,285 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     <title>Home - pyno </title>
-        <!--REQUIRED STYLE SHEETS-->
-    <!--MAIN BOOTSTRAP STYLE-->
-    <link href="/assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <!--FONT AWESOME STYLE -->
-    <link href="/assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
-         <!--CUSTOM STYLE -->
-    <link href="/assets/css/style.css" rel="stylesheet" />
-    <!--END REQUIRED STYLE SHEETS-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-	<!--link rel="icon" type="image/png" href="assets/img/pick64x64.png" /-->
-
+    <!-- link href="/assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
 <!-- FAVICONS -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/assets/img/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/assets/img/manifest.json">
-<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#301b52">
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/imgs/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/imgs/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/imgs/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/imgs/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/imgs/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/imgs/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/imgs/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/imgs/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/imgs/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/imgs/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/imgs/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/imgs/manifest.json">
+<link rel="mask-icon" href="/assets/imgs/safari-pinned-tab.svg" color="#301b52">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/assets/img/mstile-144x144.png">
-<meta name="theme-color" content="#301b52">
+<meta name="msapplication-TileImage" content="/assets/imgs/mstile-144x144.png">
+<meta name="theme-color" content="#212529">
 
- <!-- -->
-<script src="functions.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+	<link href="/assets/style.css" rel="stylesheet">
+
+    <style>
+      html, body, pre, code, kbd, samp {
+      	font-family: "Press Start 2P";
+	font-size: 13px;
+	color: #fff;
+	background-color: #212529;
+      }
+    </style>
 
 </head>
-<body onload="load();">
-<!-- div class="contento" -->
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/index.html">pyno</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li id="home" class="active"><a href="/index.html">Home</a></li>
-			<li id="about_li" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><a href="/index.html#about" onclick="javascript:goto_about();" >About</a></li>
-            <li id="research"><a href="/research.html">Research</a></li>
-            <li id="projects"><a href="/projects.html">Projects</a></li>
-<!--            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul> -->
-            </li>
-          </ul>
-<!--          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-          </ul> -->
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <br><br><br><br>
-    </section>
-    <!--END LEFT MENU SECTION -->
+<body>
+	<div id="nescss">
+	<div id="top"></div>
 
-    <!-- MAIN CONTAINER -->
-    <div class="container">
-        <!-- HOME SECION -->
-        <section id="home-section" >
-            <div class="row">
-						
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-					<!--<img class="img-circle" src="assets/img/py_big.jpg">-->
-				<img class="img-circle" src="assets/img/code.jpg">
-                <h3><strong> Simone Bossi</strong></h3>
-<!--               <h4>Computer Security Curious</h4> -->
-                 <p style="padding-left:15px;padding-right:15px">
-                    
-					 Security Consultant at <a href="http://horizonsecurity.it" target="_blank">Horizon Security</a><br>
-					 co-Founder at <a href="http://crypt.coffee" target="_blank">cryptcoffee</a><br>
-					 MSc Student at <a href="http://unimi.it" target="_blank">unimi</a>
-                </p>
-
-				<ul class="list-unstyled list-inline hidden-print">
-					<li><a href="https://twitter.com/__pyno__", target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-					<li><a href="https://it.linkedin.com/in/simonebossi", target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-					<li><a href="https://github.com/pyno", target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-					<li><a href="https://keybase.io/pyno", target="_blank"><i class="fa fa-key fa-lg"></i></a></li>
-					<li><a href="mailto:pyno.email@gmail.com", target="_blank"><i class="fa fa-envelope fa-lg"></i></a></li>
-				</ul>
-
-
-<hr>
-<i>An expert is a man who has made all the<br> mistakes which can be made,<br> in a narrow field <br>- Niels Bohr</i>
-<br><a name="about">&nbsp;</a>
-<br><br><br><br>
-
-            </div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" >
-                 <!-- <h1>LANDING  <i class="fa fa-flask main-color fa-spin"></i> FLASK  </h1> -->
-				 <!-- <a class="anchor" name="about"></a> -->
-				<h2> About </h2>
-               <br>
-                <p>
-                    <h4>Now</h4>
-					I'm currently working as a Security Consultant at <a href="http://horizonsecurity.it", target="_blank" >Horizon Security</a> where I mainly carry out pentesting activities, and attending a MSc in Computer Science at <a href="http://unimi.it", target="_blank">University of Milan</a>.
-					I love CTFs and I play every time I can at the <a href="http://security.di.unimi.it", target="_blank">LaSER Laboratory</a> with the <a href="https://l4ser.github.io", target="_blank">fuffateam</a>.<br><br>
-
-                    <h4>Prev</h4>
-					I previously worked as a cryptanalyst at <a href="http://st.com", target="_blank" >STMicroelectronics</a>, a world leader multinational in semiconductor solutions.<br><br>
-
-					In 2014 toghether with a couple of classmates, I co-founded <a href="http://crypt.coffee", target="_blank">cryptcoffee</a> and if you're an InfoSec addicted as I am, I suggest you to take a look.. <br><br>
-					
-					I graduated in 2014 at the University of Milan , where I was part of the <a href="http://www.club.di.unimi.it", target="_blank">CLUB</a> Laboratory. My BSc thesis is titled "Can a FDE solution provide security in the event that personal data is lost or stolen?"
-					<br><br>
-
-					<h4>Misc</h4>
-					Outside of Computer Science I've a couple of hobbies that are Music and Photogaphy.<br>
-
-					I've been a guitar player in a rock band for a while and now I enjoy playing in an acoustic duo named <a href="https://www.facebook.com/drawingmelodies", target="_blank">Drawing Melodies</a>.<br>
-
-					I use to drop <a href="https://www.instagram.com/pyno.photo", target="_blank">here</a> the few decent pics I take so... Come to have a look ;)
-
-					
-                </p>
-				 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                       
-<!--                        <div id="counter"></div>
-                        <div id="counter-default" class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="day-number" class="timer-number"></div>
-                                    <div class="timer-text">DAYS</div>
-                                    <div class="progress medium  active">
-                                        <div id="day-bar" class="progress-bar bk-blue"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="hour-number" class="timer-number"></div>
-                                    <div class="timer-text">HOURS</div>
-                                    <div class="progress medium  active">
-                                        <div id="hour-bar" class="progress-bar bk-green"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="minute-number" class="timer-number"></div>
-                                    <div class="timer-text">MINUTES</div>
-                                    <div class="progress medium  active">
-                                        <div id="minute-bar" class="progress-bar bk-pink"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="second-number" class="timer-number"></div>
-                                    <div class="timer-text">SECOND</div>
-
-                                    <div class="progress medium  active">
-                                        <div id="second-bar" class="progress-bar bk-red"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- ./Counter -->
-
-
-                    </div>
-                </div>
-            </div>
-			
-			
-			
-			
-               
+		<!--  
+			HEADER (DESKTOP)
+		-->
+		<header class="is-desktop">
+			<div class="container">
+				<div class="nav-brand">
+					<a href="#top">
+					<h2>pyno</h2>
+					<!--p> personal page </p-->
+					</a>
+				</div>
+				<div class="item">
+						<a class="nes-btn is-success is-desktop" href="#about">about</a>
+						<a class="nes-btn is-warning is-desktop" href="#research">research</a>
+						<a class="nes-btn is-error is-desktop" href="#projects">projects</a>
+				</div>
 			</div>
-            <br><br>
-            <!--./row-->
-        </section>
-        <!-- END HOME SECION -->
-        
-        <!-- FOOTER SECION -->
-        <section id="footer">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    &copy; pyno.me 2018
-                </div>
-            </div>
-            <!--./row-->
-        </section>
-        <!--END FOOTER SECION -->
-    </div>
-    <!-- END MAIN CONTAINER -->
-    <!--REQUIRED SCRIPTS FILES-->  <!--SCRIPTS AT END SO PAGE WILL TAKE LESS TIME TO LOAD-->
-    <!--REQUIRED CORE JQUERY SCRIPTS FILE--> 
-    <script src="assets/plugins/jquery.min.js"></script>
-     <!--REQUIRED BOOTSTRAP SCRIPTS FILE-->
-    <script src="assets/plugins/bootstrap/bootstrap.js"></script>
-   <!--REQUIRED SCRIPT FILES FOR JQUERY COUNTDOWN-->
-    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
-    <script src="assets/js/countdown.js"></script>
-     <!--REQUIRED SCRIPT FOR SCROLLING MENU LINKS--> 
-     <script src="assets/plugins/jquery.easing.1.3.js"></script>
-        <!--REQUIRED CUSTOM SCRIPT FILE-->    
-    <script src="assets/js/custom-color.js"></script>
-      <!--END REQUIRED SCRIPTS FILES-->
+		</header>
+		<div class="container">
+		<br>
+				
+			<div class="main-container">
 
-</div>
+				
+				<!-- 
+					TOPIC
+				-->
+				<section class="topic" style="text-align:center">
+					<!--i class="nes-pokeball"></i-->
+					<h2>~ Simone Bossi ~</h2>
+					<p>Senior Security Consultant at <a href="https://www.horizonsecurity.it" target="blank">Horizon Security</a></p>
+					<p>co-Founder at <a href="http://crypt.coffee" target="blank">crypt.coffee</a></p>
+				</section>
+
+
+
+				<!-- 
+						SOCIAL
+				-->
+				<div class="my-social-buttons" style="text-align:center">
+					<div class="share">
+						<a href="https://twitter.com/__pyno__" target="blank"><i class="nes-icon twitter"></i></a> 
+						<!--a href=""><i class="nes-icon keybase"></i></a--> 
+						<a href="https://www.linkedin.com/in/simonebossi" target="blank"><i class="nes-icon linkedin"></i></a> 
+						<a href="https://github.com/pyno/" target="blank"><i class="nes-icon github"></i></a>
+						<label for="mailme" href="#mailme"><i class="nes-icon gmail"></i></label>
+						<input id="mailme" type="checkbox">
+						<div id="mailme" class="puf">
+							simonebossi ~dot~ work ~at~ gmail ~dot~ com
+						</div>
+					</div>
+				</div>
+				<br><br>
+
+
+
+				<!--  
+					ABOUT
+				 -->
+				<section id="about">
+					<h2>About</h2>
+
+
+					<!-- NOW -->
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">Now</p>
+							<p>Since late 2015 I'm working as a Security Consultant at Horizon Security where I mainly carry out pentesting activities on mobile and web applications, networks, embedded and IoT devices, biometric authentication systems and so on.</p>
+							<!--p>I also do analysis and PoC of fraud scenarios, social-engineering stuff and trainings in various field of computer security.</p-->
+							<p>I love CTFs competitions, and I play every time I can at <a href="http://security.di.unimi.it" target="blank">LaSER lab</a> with <a href="http://l4ser.github.io" target="blank">fuffateam</a>.</p>
+						</div>
+					</section>
+
+
+					<!-- PREV -->
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">Prev</p>
+							<p>In 2019 I graduated at the University of Milan, where I was part of the LaSER lab.
+							<p>In 2015 I worked as a cryptanalyst at STMicroelectronics, a world leader multinational in semiconductor solutions, where I carried out research activities on communication security of IoT devices.</p>
+							<p>In 2014 toghether with a couple of classmates, I co-founded <a href="http://crypt.coffee" target="blank">cryptcoffee</a> and if you're an InfoSec addicted as I am, I suggest you to take a look..</p>
+							<p>I got my BSc in 2014 at the University of Milan, where I was part of the CLUB Laboratory.</p>
+						</div>
+					</section>
+
+
+					<!-- EDUCATION -->
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">Education</p>
+							<p class="nes-text is-error">2019 - Master of Science in Computer Science</p>
+							<pre class="is-desktop">Institute:   University of Milan
+Final mark:  110/100L
+Thesis:      Fuzzing OS Kernel Module Interface</pre>
+							<p class="is-mobile">University of Milan<br>
+							110/100L<br>
+							Thesis: Fuzzing OS Kernel Module Interface
+							</p>
+
+							<p class="nes-text is-error">2014 - Bachelor of Science in Computer Science</p>
+							<pre class="is-desktop">Institute:   University of Milan
+Final mark:  104/110
+Thesis:      Can a FDE solution provide security in the event 
+             that data is lost or stolen?</pre>
+							<p class="is-mobile">University of Milan<br>
+							104/110<br>
+							Thesis: Can a FDE solution provide security in the event that data is lost or stolen?</p>
+						</div>
+					</section>
+
+
+					<!-- MISC -->
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">Misc</p>
+							<p>Outside of Computer Science I've three main hobbies that are music, photogaphy and climbing.</p>
+							<p>I've been a guitar player in a rock band for a while and now I enjoy playing in an acoustic duo named <a href="https://www.facebook.com/drawingmelodies" target="blank">Drawing Melodies</a>.</p>
+							<p>I use to drop <a href="https://www.instagram.com/pyno.photo" target="blank">here</a> some decent pics I take so... Come to have a look ;)</p>
+						</div>
+					</section>
+				</section>
+
+
+
+				<!-- 
+					RESEARCH
+				-->
+				<section id="research" class="showcase">
+					<h2>Research</h2>
+
+
+					<!-- PUBLICATIONS -->
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">Publications</p>
+							<p class="nes-text is-error">On TLS 1.3 - Early performance analysis in the IoT field 
+							<a href="http://www.scitepress.org/PublicationsDetail.aspx?ID=RT%2fFrzE+Wek%3d&t=1" target='blank' class="fas fa-file-pdf bigger is-error"></a>
+							</p>
+							<p>This paper provides an overview of the novelties introduced in TLS 1.3 draft finalized to improve security and latency of the protocol: the reworked handshake flows and the newly adopted cryptographic algorithms are analyzed and compared in terms of security and latency to the current TLS in use.</p>
+
+							<p class="nes-text is-error">What users should know about Full Disk Encryption based on LUKS
+								<a href="https://eprint.iacr.org/2016/274.pdf" target="blank" class="fas fa-file-pdf bigger is-error"></a>
+								<a class="fas fa-book bigger is-error" href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_16" target="blank"></a>
+							</p>
+							<p> Full Disk Encryption (FDE) solutions might help users to protect sensitive data in the event that devices are lost or stolen. In this paper we focus on the security of Linux Unified Key Setup (LUKS) specifications, the most common FDE solution implemented in Linux based operating systems. In particular, we analyze the key management process used to compute and store the encryption key, and the solution adopted to mitigate the problem of brute force attacks based on weak user passwords. Our testing activities shows some weaknesses and user’s behavior that can significantly reduce the security of the main LUKS implementation, Cryptsetup.</p>
+
+							<p class="nes-text is-error">On the weaknesses of PBKDF2
+								<a href="https://eprint.iacr.org/2016/273.pdf" target="blank" class="fas fa-file-pdf bigger is-error"></a>
+								<a href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_9" target="blank" class="fas fa-book bigger is-error"></a>
+							</p>
+							<p> This paper shows that, if HMAC-SHA-1 is computed in a standard mode without following the performance improvements described in the implementation note of RFC 2104 and FIPS 198-1, an attacker is able to avoid 50 % of PBKDF2’s CPU intensive operations, by replacing them with precomputed values. We note that a number of well-known and widely-used crypto libraries are subject to this vulnerability. In addition to such a vulnerability, we describe some other minor optimizations that an attacker can exploit to reduce even more the key derivation time. </p>
+
+						</div>
+					</section>
+
+					<!-- CVEs 
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">CVEs</p>
+							<p class="nes-text is-error">CVE-2018-16235 - XSS in Telligent Community</p>
+
+
+
+				</section>
+					-->
+
+				<!--  
+					PROJECTS
+				 -->
+				<section id="projects" class="showcase">
+					<h2>Projects</h2>
+
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">Skul</p>
+							<p> Skul is a PoC to bruteforce the Cryptsetup implementation of Linux Unified Key Setup (LUKS), I mainly wrote during my BSc thesis. Skul is now maintained by myself and my colleagues at cryptcoffee and it has been integrated into the <a href="https://blackarch.org" target="blank">BlackArch Linux</a> Penetration Testing Distribution. Your can read more about it <a href="http://crypt.coffee/research/luks.html" target="blank">here</a> or... <a href="https://github.com/cryptcoffee/skul" target="blank">Check it out!</a> </p>
+						</div>
+
+				</section>
+
+
+			</div>
+		</div>
+
+
+		
+		<!-- 
+			TOP NAVIGATOR BUTTON (DESKTOP)
+		-->
+		<a href="#top" class="is-desktop">
+			<button class="nes-btn is-error scroll-btn active" type="button">
+				<span><</span>
+			</button>
+		</a>
+
+
+		<!-- 
+			FOOTER
+		-->
+		<br>
+		<footer class="footer">
+			<span class="copyleft">&copy;</span> pyno.me
+			<br>
+			X-Powered-By: NES.css
+			<br>
+			100% CSS, Javascript free
+		</footer>
+
+
+	</div>
+	<div class="is-mobile" style="height:3rem;"></div>
+
+		<!--  
+			MOBILE NAVIGATION
+		-->
+		<div class="is-mobile mob_header">
+			<div class="container">
+				<div class="item">
+					<a href="#top" class="nes-btn is-error is-mobile mob_scroll-btn">
+						<span><</span>
+					</a>
+				</div>
+				
+				<div class="nav-brand center">
+					<a href="#top">
+					<h2>pyno</h2>
+					</a>
+				</div>
+				<div class="item">
+						<a class="nes-btn is-success is-mobile" href="#about">a</a>
+						<a class="nes-btn is-warning is-mobile" href="#research">r</a>
+						<a class="nes-btn is-error is-mobile" href="#projects">p</a>
+						
+				</div>
+				
+			</div>
+		</div>
+
 </body>
-
-
 </html>
