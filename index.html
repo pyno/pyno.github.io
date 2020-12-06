@@ -43,6 +43,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 	<link href="/assets/style.css" rel="stylesheet">
+	<link href="/assets/mountains.css" rel="stylesheet">
 
     <style>
       html, body, pre, code, kbd, samp {
@@ -81,17 +82,22 @@
 				
 			<div class="main-container">
 
+			<div style="align:center">
+				<section class="topic is-desktop" style="text-align:center;margin:auto;height:250px;width:750px;">
+					<div class="is-desktop pixelart-to-css" style="position: relative; z-index:0;"></div>
+				</section>
+				<div class="topic is-mobile" style="margin: 0 auto;height:104px;width:300px;">
+					<div class="is-mobile pixelart-to-css-mobile" style="position:relative; align:center; z-index:0;"></div>
+				</div>
 				
 				<!-- 
 					TOPIC
 				-->
-				<section class="topic" style="text-align:center">
-					<!--i class="nes-pokeball"></i-->
-					<h2>~ Simone Bossi ~</h2>
-					<p>Senior Security Consultant at <a href="https://www.horizonsecurity.it" target="blank">Horizon Security</a></p>
-					<p>co-Founder at <a href="http://crypt.coffee" target="blank">crypt.coffee</a></p>
+				<section class="topic" style="text-align:center;position:relative;z-index:5;">
+						<h2>~ Simone Bossi ~</h2>
+						<p>Senior security consultant </p><p>at <a href="https://www.reply.com/it/topics/security/" target="blank">Spike Reply</a></p>
 				</section>
-
+				</div>
 
 
 				<!-- 
@@ -125,9 +131,9 @@
 					<section class="showcase">
 						<div class="nes-container is-dark with-title is-rounded">
 							<p class="title">Now</p>
-							<p>Since late 2015 I'm working as a Security Consultant at Horizon Security where I mainly carry out pentesting activities on mobile and web applications, networks, embedded and IoT devices, biometric authentication systems and so on.</p>
 							<!--p>I also do analysis and PoC of fraud scenarios, social-engineering stuff and trainings in various field of computer security.</p-->
-							<p>I love CTFs competitions, and I play every time I can at <a href="http://security.di.unimi.it" target="blank">LaSER lab</a> with <a href="http://l4ser.github.io" target="blank">fuffateam</a>.</p>
+							<p>Since the early 2020 I'm working as a security consultant in the IoT security unit at <a href="https://www.reply.com/it/topics/security/" target="blank">Spike Reply</a>. My main focus is IoT pentesting, and I also participate in organizing security related training sessions and CTF events.</p>
+							<p>I've played CTFs at <a href="http://security.di.unimi.it" target="blank">LaSER lab</a> with <a href="http://l4ser.github.io" target="blank">fuffateam</a> for a while. Now I enjoy playing in my spare time with friends and colleagues.</p>
 						</div>
 					</section>
 
@@ -136,10 +142,11 @@
 					<section class="showcase">
 						<div class="nes-container is-dark with-title is-rounded">
 							<p class="title">Prev</p>
-							<p>In 2019 I graduated at the University of Milan, where I was part of the LaSER lab.
+							<p>In late 2015 I started working as a security consultant at <a href="https://horizonsecurity.it" target="blank">Horizon Security</a> where I mainly carried out pentesting activities on mobile and web applications, networks, embedded and IoT devices, biometric authentication systems and so on.</p>
+							<p>In 2019 I graduated at the <a href="https://unimi.it" target="blank">University of Milan</a>, where I was part of the <a href="http://security.di.unimi.it" target=blank>LaSER</a> lab.
 							<p>In 2015 I worked as a cryptanalyst at STMicroelectronics, a world leader multinational in semiconductor solutions, where I carried out research activities on communication security of IoT devices.</p>
-							<p>In 2014 toghether with a couple of classmates, I co-founded <a href="http://crypt.coffee" target="blank">cryptcoffee</a> and if you're an InfoSec addicted as I am, I suggest you to take a look..</p>
-							<p>I got my BSc in 2014 at the University of Milan, where I was part of the CLUB Laboratory.</p>
+							<p>In 2014 together with a couple of classmates, I co-founded <a href="https://cryptcoffee.github.io" target="blank">cryptcoffee</a>, a research group that focuses on security and cryptography.</p>
+							<p>I got my BSc in 2014 at the University of Milan, where I was part of the <a href="http://club.di.unimi.it/" target="blank" >CLUB</a> Laboratory.</p>
 						</div>
 					</section>
 
@@ -173,9 +180,9 @@ Thesis:      Can a FDE solution provide security in the event
 					<section class="showcase">
 						<div class="nes-container is-dark with-title is-rounded">
 							<p class="title">Misc</p>
-							<p>Outside of Computer Science I've three main hobbies that are music, photogaphy and climbing.</p>
+							<p>Outside of Computer Science I've three main hobbies that are music, photography and climbing.</p>
 							<p>I've been a guitar player in a rock band for a while and now I enjoy playing in an acoustic duo named <a href="https://www.facebook.com/drawingmelodies" target="blank">Drawing Melodies</a>.</p>
-							<p>I use to drop <a href="https://www.instagram.com/pyno.photo" target="blank">here</a> some decent pics I take so... Come to have a look ;)</p>
+							<p>I drop <a href="https://www.instagram.com/pyno.photo" target="blank">here</a> some decent pics I take so... Come to have a look ;)</p>
 						</div>
 					</section>
 				</section>
@@ -202,7 +209,7 @@ Thesis:      Can a FDE solution provide security in the event
 								<a href="https://eprint.iacr.org/2016/274.pdf" target="blank" class="fas fa-file-pdf bigger is-error"></a>
 								<a class="fas fa-book bigger is-error" href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_16" target="blank"></a>
 							</p>
-							<p> Full Disk Encryption (FDE) solutions might help users to protect sensitive data in the event that devices are lost or stolen. In this paper we focus on the security of Linux Unified Key Setup (LUKS) specifications, the most common FDE solution implemented in Linux based operating systems. In particular, we analyze the key management process used to compute and store the encryption key, and the solution adopted to mitigate the problem of brute force attacks based on weak user passwords. Our testing activities shows some weaknesses and user’s behavior that can significantly reduce the security of the main LUKS implementation, Cryptsetup.</p>
+							<p> Full Disk Encryption (FDE) solutions might help users to protect sensitive data in the event that devices are lost or stolen. In this paper we focus on the security of Linux Unified Key Setup (LUKS) specifications, the most common FDE solution implemented in Linux based operating systems. In particular, we analyze the key management process used to compute and store the encryption key, and the solution adopted to mitigate the problem of brute force attacks based on weak user passwords. Our testing activities show some weaknesses and user’s behavior that can significantly reduce the security of the main LUKS implementation, Cryptsetup.</p>
 
 							<p class="nes-text is-error">On the weaknesses of PBKDF2
 								<a href="https://eprint.iacr.org/2016/273.pdf" target="blank" class="fas fa-file-pdf bigger is-error"></a>
@@ -230,13 +237,21 @@ Thesis:      Can a FDE solution provide security in the event
 				<section id="projects" class="showcase">
 					<h2>Projects</h2>
 
+					<section class="showcase">
+						<div class="nes-container is-dark with-title is-rounded">
+							<p class="title">dirfy</p>
+							<p> dirfy is a lightweight and highly configurable async web path scanner, that performs fast content discovery against web applications. <a href="https://github.com/pyno/dirfy" target="blank">Give it a try!</a> </p>
+						</div>
+					</section>
+
+					<section class="showcase">
 						<div class="nes-container is-dark with-title is-rounded">
 							<p class="title">Skul</p>
-							<p> Skul is a PoC to bruteforce the Cryptsetup implementation of Linux Unified Key Setup (LUKS), I mainly wrote during my BSc thesis. Skul is now maintained by myself and my colleagues at cryptcoffee and it has been integrated into the <a href="https://blackarch.org" target="blank">BlackArch Linux</a> Penetration Testing Distribution. Your can read more about it <a href="http://crypt.coffee/research/luks.html" target="blank">here</a> or... <a href="https://github.com/cryptcoffee/skul" target="blank">Check it out!</a> </p>
+							<p> Skul is a PoC to bruteforce the Cryptsetup implementation of Linux Unified Key Setup (LUKS), I mainly wrote during my BSc thesis. Skul is now maintained by myself and my colleagues at cryptcoffee and it has been integrated into the <a href="https://blackarch.org" target="blank">BlackArch Linux</a> Penetration Testing Distribution. You can read more about it <a href="https://cryptcoffee.github.io/research/luks.html" target="blank">here</a> or... <a href="https://github.com/cryptcoffee/skul" target="blank">Check it out!</a> </p>
 						</div>
+					</section>
 
 				</section>
-
 
 			</div>
 		</div>
