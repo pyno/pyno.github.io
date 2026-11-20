@@ -1,345 +1,177 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+<!doctype html>
 <html lang="en">
-<!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Simone Bossi home page">
-	<meta name="keywords" content="Simone,Bossi,pyno,Security,Cryptography,cryptcoffee">
-    <meta name="author" content="pyno">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>Home - pyno </title>
-    <!--FONT AWESOME STYLE -->
-    <!-- link href="/assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" /-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-<!-- FAVICONS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simone Bossi — vulnerability research team lead, security researcher, and maker of security tools.">
+  <meta name="keywords" content="Simone Bossi, pyno, security, vulnerability research, cryptography, IoT, OT">
+  <meta name="author" content="Simone Bossi">
+  <meta name="theme-color" content="#171717">
+  <meta name="msapplication-TileColor" content="#171717">
+  <meta name="msapplication-TileImage" content="/assets/imgs/mstile-144x144.png">
 
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/imgs/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/imgs/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/imgs/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/imgs/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/imgs/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/imgs/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/imgs/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/imgs/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/imgs/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/assets/imgs/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/assets/imgs/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/assets/imgs/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/assets/imgs/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/assets/imgs/manifest.json">
-<link rel="mask-icon" href="/assets/imgs/safari-pinned-tab.svg" color="#301b52">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/assets/imgs/mstile-144x144.png">
-<meta name="theme-color" content="#212529">
+  <title>pyno.me — Simone Bossi</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-	<link href="/assets/style.css" rel="stylesheet">
-	<link href="/assets/mountains.css" rel="stylesheet">
+  <link rel="icon" href="/assets/imgs/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/imgs/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/imgs/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/imgs/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/assets/imgs/manifest.json">
+  <link rel="mask-icon" href="/assets/imgs/safari-pinned-tab.svg" color="#c8835d">
 
-    <style>
-      html, body, pre, code, kbd, samp {
-      	font-family: "Press Start 2P";
-	font-size: 13px;
-	color: #fff;
-	background-color: #212529;
-      }
-    </style>
-
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-	<div id="nescss">
-	<div id="top"></div>
+  <a class="skip-link" href="#content">skip to content</a>
 
-		<!--  
-			HEADER (DESKTOP)
-		-->
-		<header class="is-desktop">
-			<div class="container">
-				<div class="nav-brand">
-					<a href="#top">
-					<h2>pyno</h2>
-					<!--p> personal page </p-->
-					</a>
-				</div>
-				<div class="item">
-						<a class="nes-btn is-success is-desktop" href="#about">about</a>
-						<a class="nes-btn is-warning is-desktop" href="#research">research</a>
-						<a class="nes-btn is-error is-desktop" href="#projects">projects</a>
-				</div>
-			</div>
-		</header>
-		<div class="container">
-		<br>
-				
-			<div class="main-container">
+  <div class="page" id="top">
+    <header class="site-header">
+      <a class="site-name" href="#top" aria-label="pyno.me home">pyno.me</a>
+      <h1>Simone Bossi</h1>
+      <p class="role">Security research team lead at <a href="https://www.nozominetworks.com" target="_blank" rel="noreferrer">Nozomi Networks</a>.</p>
 
-			<div style="align:center">
-				<section class="topic is-desktop" style="text-align:center;margin:auto;height:250px;width:750px;">
-					<div class="is-desktop pixelart-to-css" style="position: relative; z-index:0;"></div>
-				</section>
-				<div class="topic is-mobile" style="margin: 0 auto;height:104px;width:300px;">
-					<div class="is-mobile pixelart-to-css-mobile" style="position:relative; align:center; z-index:0;"></div>
-				</div>
-				
-				<!-- 
-					TOPIC
-				-->
-				<section class="topic" style="text-align:center;position:relative;z-index:5;">
-						<h2>~ Simone Bossi ~</h2>
-						<p>Vulnerability research team lead </p><p>at <a href="https://www.nozominetworks.com" target="blank">Nozomi Networks</a></p>
-				</section>
-				</div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">research</a>
+        <a href="#projects">projects</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">RESEARCH</h2>
+
+        <article class="publication">
+          <h3>Raiders of the Lost Firmware: A Hands-On Workshop in IoT Firmware Archaeology</h3>
+          <h3>DEFCON 34 - IoT Village</h3>
+          <p>Modern IoT firmware is often protected by proprietary encryption that blocks traditional analysis. This hands-on workshop focuses on firmware archaeology, a practical methodology for reconstructing firmware decryption schemes using artifacts from firmware archives, public repositories, and developer ecosystems. Attendees will analyze a real commercial IP camera platform, recover cryptographic routines from binaries, and emulate vendor functions to decrypt protected firmware without reimplementing the cryptography. They will then explore hidden functionality and map the platform’s broader attack surface. Through practical exercises and pre-packaged tooling, participants will learn a repeatable approach for overcoming firmware analysis barriers across modern IoT platforms.</p>
+          <p class="links"><a href="https://info.defcon.org/defcon34/content/66822" target="_blank" rel="noreferrer">DefCon</a>
+          <a href="https://www.nozominetworks.com/blog/firmware-archaeology-toolset-ai-assisted-methodology-from-encrypted-firmware-to-a-0-click-rce" target="_blank" rel="noreferrer">Blog</a></p>
+        </article>
 
 
-				<!-- 
-						SOCIAL
-				-->
-				<div class="my-social-buttons" style="text-align:center">
-					<div class="share">
-						<a href="https://twitter.com/__pyno__" target="blank"><i class="nes-icon twitter"></i></a> 
-						<!--a href=""><i class="nes-icon keybase"></i></a--> 
-						<a href="https://www.linkedin.com/in/simonebossi" target="blank"><i class="nes-icon linkedin"></i></a> 
-						<a href="https://github.com/pyno/" target="blank"><i class="nes-icon github"></i></a>
-						<label for="mailme" href="#mailme"><i class="nes-icon gmail"></i></label>
-						<input id="mailme" type="checkbox">
-						<div id="mailme" class="puf">
-							simonebossi ~dot~ work ~at~ gmail ~dot~ com
-						</div>
-					</div>
-				</div>
-				<br><br>
+        <article class="publication">
+          <h3>On TLS 1.3 — Early performance analysis in the IoT field</h3>
+          <h3>ICISSP</h3>
+          <p>This paper provides an overview of the novelties introduced in TLS 1.3 draft finalized to improve security and latency of the protocol: the reworked handshake flows and the newly adopted cryptographic algorithms are analyzed and compared in terms of security and latency to the current TLS in use.</p>
+          <p class="links"><a href="http://www.scitepress.org/PublicationsDetail.aspx?ID=RT%2fFrzE+Wek%3d&amp;t=1" target="_blank" rel="noreferrer">paper</a></p>
+        </article>
 
+        <article class="publication">
+          <h3>What users should know about Full Disk Encryption based on LUKS</h3>
+          <h3>CANS</h3>
+          <p>Full Disk Encryption (FDE) solutions might help users to protect sensitive data in the event that devices are lost or stolen. In this paper we focus on the security of Linux Unified Key Setup (LUKS) specifications, the most common FDE solution implemented in Linux based operating systems. In particular, we analyze the key management process used to compute and store the encryption key, and the solution adopted to mitigate the problem of brute force attacks based on weak user passwords. Our testing activities show some weaknesses and user’s behavior that can significantly reduce the security of the main LUKS implementation, Cryptsetup.</p>
+          <p class="links"><a href="https://eprint.iacr.org/2016/274.pdf" target="_blank" rel="noreferrer">pdf</a> <a href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_16" target="_blank" rel="noreferrer">book</a></p>
+        </article>
 
+        <article class="publication">
+          <h3>On the weaknesses of PBKDF2</h3>
+          <h3>CANS</h3>
+          <p>This paper shows that, if HMAC-SHA-1 is computed in a standard mode without following the performance improvements described in the implementation note of RFC 2104 and FIPS 198-1, an attacker is able to avoid 50% of PBKDF2’s CPU-intensive operations by replacing them with precomputed values. We note that a number of well-known and widely used crypto libraries are subject to this vulnerability. In addition, we describe other minor optimizations that an attacker can exploit to reduce the key-derivation time even further.</p>
+          <p class="links"><a href="https://eprint.iacr.org/2016/273.pdf" target="_blank" rel="noreferrer">pdf</a> <a href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_9" target="_blank" rel="noreferrer">book</a></p>
+        </article>
+      </section>
 
-				<!--  
-					ABOUT
-				 -->
-				<section id="about">
-					<h2>About</h2>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">PROJECTS</h2>
 
+        <article class="project">
+          <h3><a href="https://github.com/NozomiNetworks/firmware-archaeology-toolset" target="_blank" rel="noreferrer">Firmware Archaeology Toolset</a></h3>
+          <p>FAT is a stateful, project-oriented tool for artifact hunting: find likely firmware images, SDKs, container images, and other downloadable artifacts across public sources, triage them, and retrieve them, including archived copies from the Wayback Machine.</p>
+        </article>
 
-					<!-- NOW -->
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Now</p>
-							<p>Since mid-2025, I am the vulnerability research team lead at <a href="https://www.nozominetworks.com/labs" target="blank">Nozomi Networks Labs</a>, overseeing the discovery of 0-day vulnerabilities in OT and IoT devices and innovative security research, while leading a team of researchers. My role combines hands-on technical work with responsibilities in team coordination and people management.</p>
-							<p>I've played CTFs at <a href="http://security.di.unimi.it" target="blank">LaSER lab</a> with <a href="http://l4ser.github.io" target="blank">fuffateam</a> for a while. Now I enjoy playing in my spare time with friends and colleagues.</p>
-						</div>
-					</section>
+        <article class="project">
+          <h3><a href="https://github.com/pyno/http-digest-auth" target="_blank" rel="noreferrer">HTTP Digest Authentication</a></h3>
+          <p>A Burp Suite extension to handle HTTP Digest Authentication, which is no longer supported by Burp Suite since version 2020.7. It might come in handy if you are testing IoT devices like CCTVs or similar.</p>
+        </article>
 
+        <article class="project">
+          <h3><a href="https://github.com/pyno/dirfy" target="_blank" rel="noreferrer">dirfy</a></h3>
+          <p>A lightweight and highly configurable async web path scanner that performs fast content discovery against web applications.</p>
+        </article>
 
-					<!-- PREV -->
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Prev</p>
-              <p>From early 2020 to mid-2025, I worked in the IoT & Reverse Engineering Business unit at <a href="https://www.reply.com/spike-reply" target="blank">Spike Reply</a>, progressing from security consultant to technical lead, with a brief period as manager of the business unit. My work focused on IoT/OT and Automotive penetration testing, and I also contributed to organizing security training sessions and Capture-the-Flag events. 
-              <p>From late 2015, I worked as a security consultant at <a href="https://horizonsecurity.it" target="blank">Horizon Security</a>, where I carried out penetration testing on mobile and web applications, networks, embedded and IoT devices, and biometric authentication systems.</p>
-							<p>In 2019 I graduated at the <a href="https://unimi.it" target="blank">University of Milan</a>, where I was part of the <a href="http://security.di.unimi.it" target=blank>LaSER</a> lab.
-							<p>In 2015 I worked as a cryptanalyst at STMicroelectronics, a world leader multinational in semiconductor solutions, where I carried out research activities on communication security of IoT devices.</p>
-							<p>In 2014 together with a couple of classmates, I co-founded <a href="https://cryptcoffee.github.io" target="blank">cryptcoffee</a>, a research group that focuses on security and cryptography.</p>
-							<p>I got my BSc in 2014 at the University of Milan, where I was part of the <a href="http://club.di.unimi.it/" target="blank" >CLUB</a> Laboratory.</p>
-						</div>
-					</section>
+        <article class="project">
+          <h3><a href="https://github.com/cryptcoffee/skul" target="_blank" rel="noreferrer">Skul</a></h3>
+          <p>A proof of concept for brute-forcing the Cryptsetup implementation of LUKS, originally written during my BSc thesis and later integrated into <a href="https://blackarch.org" target="_blank" rel="noreferrer">BlackArch Linux</a>. More background is available at <a href="https://cryptcoffee.github.io/research/luks.html" target="_blank" rel="noreferrer">cryptcoffee</a>.</p>
+        </article>
+      </section>
 
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">ABOUT</h2>
 
-					<!-- EDUCATION -->
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Education</p>
-							<p class="nes-text is-error">2019 - Master of Science in Computer Science</p>
-							<pre class="is-desktop">Institute:   University of Milan
-Final mark:  110/100L
-Thesis:      Fuzzing OS Kernel Module Interface</pre>
-							<p class="is-mobile">University of Milan<br>
-							110/100L<br>
-							Thesis: Fuzzing OS Kernel Module Interface
-							</p>
+        <div class="entry">
+          <h3>NOW</h3>
+          <p> Since mid-2025, I lead the Vulnerability Research Team at <a href="https://www.nozominetworks.com/labs" target="_blank" rel="noreferrer">Nozomi Networks Labs</a>, focusing on the discovery of 0-day vulnerabilities in OT and IoT devices and innovative security research. My work combines hands-on vulnerability research with team coordination and people management, with a growing focus on applying LLMs to vulnerability research, ranging from frontier models from leading providers to open-weight, self-hosted models. </p>
 
-							<p class="nes-text is-error">2014 - Bachelor of Science in Computer Science</p>
-							<pre class="is-desktop">Institute:   University of Milan
-Final mark:  104/110
-Thesis:      Can a FDE solution provide security in the event 
-             that data is lost or stolen?</pre>
-							<p class="is-mobile">University of Milan<br>
-							104/110<br>
-							Thesis: Can a FDE solution provide security in the event that data is lost or stolen?</p>
-						</div>
-					</section>
+          <p>I've played CTFs at <a href="http://security.di.unimi.it" target="_blank" rel="noreferrer">LaSER lab</a> with <a href="http://l4ser.github.io" target="_blank" rel="noreferrer">fuffateam</a> for a while. Now I enjoy playing in my spare time with friends and colleagues.</p>
+        </div>
 
+        <div class="entry">
+          <h3>PREV</h3>
+          <ul class="timeline">
+            <li><span class="when">2020–2025</span><span>IoT &amp; Reverse Engineering at <a href="https://www.reply.com/spike-reply" target="_blank" rel="noreferrer">Spike Reply</a>, progressing from security consultant to technical lead, with a brief period as manager. My work focused on IoT/OT and automotive penetration testing, security training, and Capture-the-Flag events.</span></li>
+            <li><span class="when">2015–2020</span><span>Security consultant at <a href="https://horizonsecurity.it" target="_blank" rel="noreferrer">Horizon Security</a>, working on mobile and web applications, networks, embedded and IoT devices, and biometric authentication systems.</span></li>
+            <li><span class="when">2019</span><span>Graduated from the <a href="https://unimi.it" target="_blank" rel="noreferrer">University of Milan</a>, where I was part of the <a href="http://security.di.unimi.it" target="_blank" rel="noreferrer">LaSER</a> lab.</span></li>
+            <li><span class="when">2015</span><span>Cryptanalyst at STMicroelectronics, researching communication security for IoT devices.</span></li>
+            <li><span class="when">2014</span><span>Co-founded <a href="https://cryptcoffee.github.io" target="_blank" rel="noreferrer">cryptcoffee</a>, a research group focused on security and cryptography.</span></li>
+            <li><span class="when">2014</span><span>Received my BSc from the University of Milan, where I was part of the <a href="http://club.di.unimi.it/" target="_blank" rel="noreferrer">CLUB</a> laboratory.</span></li>
+          </ul>
+        </div>
 
-					<!-- TEACHING -->
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Teaching experience</p>
-							<p class="nes-text is-error">2021 - Security - Lab on Attack/Defense</p>
-							<pre class="is-desktop">Institute:   Politecnico di Torino 
-Course:      2<sup>nd</sup> level Specializing Master's Programme in
-             Artificial Intelligence & Cloud: Hands-on Innovation</pre>
-							<p class="is-mobile">Politecnico di Torino<br>
-							2<sup>nd</sup> level Specializing Master's Programme in<br>
-             				Artificial Intelligence & Cloud: Hands-on Innovation
-							</p>
+        <div class="entry split">
+          <div>
+            <h3>EDUCATION</h3>
+            <dl>
+              <div>
+                <dt>2019 — MSc Computer Science</dt>
+                <dd>University of Milan · 110/100L<br>Thesis: <cite>Fuzzing OS Kernel Module Interface</cite></dd>
+              </div>
+              <div>
+                <dt>2014 — BSc Computer Science</dt>
+                <dd>University of Milan · 104/110<br>Thesis: <cite>Can a FDE solution provide security in the event that data is lost or stolen?</cite></dd>
+              </div>
+            </dl>
+          </div>
 
-							<p class="nes-text is-error">2020 - Mobile Security</p>
-							<pre class="is-desktop">Institute:   Fastweb Digital Academy
-Course:      Information Security Advanced</pre>
-							<p class="is-mobile">Fastweb Digital Academy<br>
-Course:      Information Security Advanced
-							</p>
-						</div>
-					</section>
+          <div>
+            <h3>TEACHING</h3>
+            <dl>
+              <div>
+                <dt>2021 — Security: Attack/Defense Lab</dt>
+                <dd>Politecnico di Torino · Artificial Intelligence &amp; Cloud: Hands-on Innovation</dd>
+              </div>
+              <div>
+                <dt>2020 — Mobile Security</dt>
+                <dd>Fastweb Digital Academy · Information Security Advanced</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
 
-
-					<!-- MISC -->
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Misc</p>
-							<p>Outside of Computer Science I've three main hobbies that are music, photography and climbing.</p>
-							<p>I've been a guitar player in a rock band for a while and now I enjoy playing in an acoustic duo named <a href="https://www.facebook.com/drawingmelodies" target="blank">Drawing Melodies</a>.</p>
-							<p>I drop <a href="https://www.instagram.com/pyno.photo" target="blank">here</a> some decent pics I take so... Come to have a look ;)</p>
-						</div>
-					</section>
-				</section>
+        <!--div class="entry">
+          <h3>OFF DUTY</h3>
+          <p>Outside of computer science, my main hobbies are music, photography, and climbing. I played guitar in a rock band and now enjoy playing in an acoustic duo named <a href="https://www.facebook.com/drawingmelodies" target="_blank" rel="noreferrer">Drawing Melodies</a>. I also post some of my photographs <a href="https://www.instagram.com/pyno.photo" target="_blank" rel="noreferrer">here</a>.</p>
+        </div-->
+      </section>
 
 
 
-				<!-- 
-					RESEARCH
-				-->
-				<section id="research" class="showcase">
-					<h2>Research</h2>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">CONTACT</h2>
+        <p class="contact-links"><a href="https://github.com/pyno/" target="_blank" rel="noreferrer">github</a> <a href="https://www.linkedin.com/in/simonebossi" target="_blank" rel="noreferrer">linkedin</a> <a href="https://x.com/__pyno__" target="_blank" rel="noreferrer">x.com</a></p>
+        <details>
+          <summary>email</summary>
+          <p>simonebossi <span aria-hidden="true">~dot~</span><span class="sr-only">.</span> work <span aria-hidden="true">~at~</span><span class="sr-only">@</span> gmail <span aria-hidden="true">~dot~</span><span class="sr-only">.</span> com</p>
+        </details>
+      </section>
+    </main>
 
-
-					<!-- PUBLICATIONS -->
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Publications</p>
-							<p class="nes-text is-error">On TLS 1.3 - Early performance analysis in the IoT field 
-							<a href="http://www.scitepress.org/PublicationsDetail.aspx?ID=RT%2fFrzE+Wek%3d&t=1" target='blank' class="fas fa-file-pdf bigger is-error"></a>
-							</p>
-							<p>This paper provides an overview of the novelties introduced in TLS 1.3 draft finalized to improve security and latency of the protocol: the reworked handshake flows and the newly adopted cryptographic algorithms are analyzed and compared in terms of security and latency to the current TLS in use.</p>
-
-							<p class="nes-text is-error">What users should know about Full Disk Encryption based on LUKS
-								<a href="https://eprint.iacr.org/2016/274.pdf" target="blank" class="fas fa-file-pdf bigger is-error"></a>
-								<a class="fas fa-book bigger is-error" href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_16" target="blank"></a>
-							</p>
-							<p> Full Disk Encryption (FDE) solutions might help users to protect sensitive data in the event that devices are lost or stolen. In this paper we focus on the security of Linux Unified Key Setup (LUKS) specifications, the most common FDE solution implemented in Linux based operating systems. In particular, we analyze the key management process used to compute and store the encryption key, and the solution adopted to mitigate the problem of brute force attacks based on weak user passwords. Our testing activities show some weaknesses and user’s behavior that can significantly reduce the security of the main LUKS implementation, Cryptsetup.</p>
-
-							<p class="nes-text is-error">On the weaknesses of PBKDF2
-								<a href="https://eprint.iacr.org/2016/273.pdf" target="blank" class="fas fa-file-pdf bigger is-error"></a>
-								<a href="http://link.springer.com/chapter/10.1007/978-3-319-26823-1_9" target="blank" class="fas fa-book bigger is-error"></a>
-							</p>
-							<p> This paper shows that, if HMAC-SHA-1 is computed in a standard mode without following the performance improvements described in the implementation note of RFC 2104 and FIPS 198-1, an attacker is able to avoid 50 % of PBKDF2’s CPU intensive operations, by replacing them with precomputed values. We note that a number of well-known and widely-used crypto libraries are subject to this vulnerability. In addition to such a vulnerability, we describe some other minor optimizations that an attacker can exploit to reduce even more the key derivation time. </p>
-
-						</div>
-					</section>
-
-					<!-- CVEs 
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">CVEs</p>
-							<p class="nes-text is-error">CVE-2018-16235 - XSS in Telligent Community</p>
-
-
-
-				</section>
-					-->
-
-				<!--  
-					PROJECTS
-				 -->
-				<section id="projects" class="showcase">
-					<h2>Projects</h2>
-
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">HTTP Digest Authentication</p>
-							<p>A Burp Suite extension to handle HTTP Digest Authentication, which is no longer supported by Burp Suite since version 2020.7. It might come in handy if you are testing IoT devices like CCTVs or similar. You should be able to find it in Burp Suite Extender, or you can have a look at <a href="https://github.com/pyno/http-digest-auth" target="blank">the source code</a>.</p>
-						</div>
-					</section>
-
-
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">dirfy</p>
-							<p> dirfy is a lightweight and highly configurable async web path scanner, that performs fast content discovery against web applications. <a href="https://github.com/pyno/dirfy" target="blank">Give it a try!</a> </p>
-						</div>
-					</section>
-
-					<section class="showcase">
-						<div class="nes-container is-dark with-title is-rounded">
-							<p class="title">Skul</p>
-							<p> Skul is a PoC to bruteforce the Cryptsetup implementation of Linux Unified Key Setup (LUKS), I mainly wrote during my BSc thesis. Skul is now maintained by myself and my colleagues at cryptcoffee and it has been integrated into the <a href="https://blackarch.org" target="blank">BlackArch Linux</a> Penetration Testing Distribution. You can read more about it <a href="https://cryptcoffee.github.io/research/luks.html" target="blank">here</a> or... <a href="https://github.com/cryptcoffee/skul" target="blank">Check it out!</a> </p>
-						</div>
-					</section>
-
-				</section>
-
-			</div>
-		</div>
-
-
-		
-		<!-- 
-			TOP NAVIGATOR BUTTON (DESKTOP)
-		-->
-		<a href="#top" class="is-desktop">
-			<button class="nes-btn is-error scroll-btn active" type="button">
-				<span><</span>
-			</button>
-		</a>
-
-
-		<!-- 
-			FOOTER
-		-->
-		<br>
-		<footer class="footer">
-			<span class="copyleft">&copy;</span> pyno.me
-			<br>
-			X-Powered-By: NES.css
-			<br>
-			100% CSS, Javascript free
-		</footer>
-
-
-	</div>
-	<div class="is-mobile" style="height:3rem;"></div>
-
-		<!--  
-			MOBILE NAVIGATION
-		-->
-		<div class="is-mobile mob_header">
-			<div class="container">
-				<div class="item">
-					<a href="#top" class="nes-btn is-error is-mobile mob_scroll-btn">
-						<span><</span>
-					</a>
-				</div>
-				
-				<div class="nav-brand center">
-					<a href="#top">
-					<h2>pyno</h2>
-					</a>
-				</div>
-				<div class="item">
-						<a class="nes-btn is-success is-mobile" href="#about">a</a>
-						<a class="nes-btn is-warning is-mobile" href="#research">r</a>
-						<a class="nes-btn is-error is-mobile" href="#projects">p</a>
-						
-				</div>
-				
-			</div>
-		</div>
-
+    <footer>
+      <span>© pyno.me</span>
+      <a href="#top">back to top</a>
+    </footer>
+  </div>
 </body>
 </html>
